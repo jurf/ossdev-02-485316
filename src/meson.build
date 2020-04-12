@@ -1,3 +1,3 @@
-sources = ['main.cc']
+inc = include_directories('.')
 
-executable('find_primes', sources)
+subdir('find_primes')

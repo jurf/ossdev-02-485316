@@ -7,4 +7,5 @@ Dead-simple prime calculation.
 ```sh
 meson build && cd build
 ninja
+ninja test
 ```

@@ -1,7 +1,10 @@
-# Meson builddir
+# Meson
 build/
+subprojects/*
+!subprojects/gtest.wrap
 
 # clangd config
+.clangd/
 compile_commands.json
 
 # Prerequisites
