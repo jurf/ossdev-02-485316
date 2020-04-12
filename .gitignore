@@ -1,3 +1,9 @@
+# Meson builddir
+build/
+
+# clangd config
+compile_commands.json
+
 # Prerequisites
 *.d
 
