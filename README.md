@@ -12,3 +12,16 @@ cd build
 ninja
 ninja test
 ```
+
+## Usage
+
+```sh
+$ meson-out/find_primes
+Enter lower bound:
+0
+Enter upper bound:
+10
+
+Found primes:
+2, 3, 5, 7
+```
