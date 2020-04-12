@@ -4,6 +4,11 @@
 #include <tuple>
 #include <vector>
 
+/**
+ * Asks the user to supply a number interval
+ *
+ * @return std::pair<int, int> -- interval as <upper, lower>
+ */
 std::pair<int, int> get_numbers() {
   int a = 0;
   int b = 0;
@@ -17,6 +22,13 @@ std::pair<int, int> get_numbers() {
   return {a, b};
 }
 
+/**
+ * Finds all primes in <a, b>
+ *
+ * @param a -- lower bound
+ * @param b -- upper bound
+ * @return std::vector<int>
+ */
 std::vector<int> get_primes(int a, int b) {
   std::vector<int> primes;
 
@@ -37,6 +49,11 @@ std::vector<int> get_primes(int a, int b) {
   return primes;
 }
 
+/**
+ * Pretty-prints a vector of primes
+ *
+ * @param primes -- reference to the vector
+ */
 void print_primes(const std::vector<int>& primes) {
   std::cout << "\nFound primes: \n";
   int i = 0;
