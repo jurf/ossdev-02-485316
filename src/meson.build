@@ -1,3 +1,10 @@
-inc = include_directories('.')
+subdir('find_primes_lib')
 
-subdir('find_primes')
+sources = files('main.cc')
+
+executable(
+    'find_primes',
+    include_directories : inc,
+    sources : sources,
+    link_with : find_primes_lib
+)

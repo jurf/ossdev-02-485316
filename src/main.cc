@@ -1,8 +1,17 @@
 // Copyright (c) 2020 Juraj Fiala
 
-#include "main.h"
+#include <iostream>
+#include <utility>
+#include <vector>
 
-std::pair<int, int> get_numbers() {
+#include "find_primes/find_primes.h"
+
+/**
+ * Asks the user to supply a number interval
+ *
+ * @return std::pair<int, int> -- interval as <upper, lower>
+ */
+auto get_numbers() -> std::pair<int, int> {
   int a = 0;
   int b = 0;
 
@@ -15,26 +24,11 @@ std::pair<int, int> get_numbers() {
   return {a, b};
 }
 
-std::vector<int> get_primes(int a, int b) {
-  std::vector<int> primes;
-
-  auto is_prime = [](int n) {
-    for (int i = 2; i <= n / 2; i++) {
-      if (n % i == 0) {
-        return false;
-      }
-    }
-    return true;
-  };
-
-  for (int i = (1 < a ? a : 2); i <= b; i++) {
-    if (is_prime(i)) {
-      primes.push_back(i);
-    }
-  }
-  return primes;
-}
-
+/**
+ * Pretty-prints a vector of primes
+ *
+ * @param primes -- reference to the vector
+ */
 void print_primes(const std::vector<int>& primes) {
   std::cout << "\nFound primes: \n";
   int i = 0;
@@ -44,8 +38,7 @@ void print_primes(const std::vector<int>& primes) {
   std::cout << "\n";
 }
 
-int main() {
+auto main() -> int {
   auto [a, b] = get_numbers();
   print_primes(get_primes(a, b));
-  return 0;
 }
