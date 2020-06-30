@@ -6,5 +6,6 @@ executable(
     'find_primes',
     include_directories : inc,
     sources : sources,
-    link_with : find_primes_lib
+    link_with : find_primes_lib,
+    install : true,
 )
