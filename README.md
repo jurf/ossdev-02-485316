@@ -16,7 +16,7 @@ ninja test
 ## Usage
 
 ```sh
-$ meson-out/find_primes
+$ src/find_primes
 Enter lower bound:
 0
 Enter upper bound:
