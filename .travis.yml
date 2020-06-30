@@ -13,8 +13,8 @@ compiler:
   - gcc
 
 script:
-  - meson build
-  - cd build
+  - meson builddir
+  - cd builddir
   - ninja
   - ninja test
   - ninja clang-format
