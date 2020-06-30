@@ -12,13 +12,13 @@
  * @return std::pair<int, int> -- interval as <upper, lower>
  */
 auto get_numbers() -> std::pair<int, int> {
-  int a = 0;
-  int b = 0;
+  int a;
+  int b;
 
-  std::cout << "Enter lower bound:\n";
+  std::cout << "Enter lower bound:" << std::endl;
   std::cin >> a;
 
-  std::cout << "Enter upper bound:\n";
+  std::cout << "Enter upper bound:" << std::endl;
   std::cin >> b;
 
   return {a, b};
@@ -30,12 +30,12 @@ auto get_numbers() -> std::pair<int, int> {
  * @param primes -- reference to the vector
  */
 void print_primes(const std::vector<int>& primes) {
-  std::cout << "\nFound primes: \n";
+  std::cout << std::endl << "Found primes:" << std::endl;
   int i = 0;
   for (auto p : primes) {
     std::cout << (i++ ? ", " : "") << p;
   }
-  std::cout << "\n";
+  std::cout << std::endl;
 }
 
 auto main() -> int {
