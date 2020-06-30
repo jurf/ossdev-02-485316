@@ -7,8 +7,8 @@ Dead-simple prime calculation.
 ## Building
 
 ```sh
-meson build
-cd build
+meson builddir
+cd builddir
 ninja
 ninja test
 ```

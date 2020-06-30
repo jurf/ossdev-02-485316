@@ -1,5 +1,5 @@
 project('find_primes', 'cpp',
-    version : '0.1.0',
+    version : '0.2.0',
     license : 'MIT',
     default_options : [
         'warning_level=3',
